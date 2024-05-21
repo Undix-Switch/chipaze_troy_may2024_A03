@@ -58,6 +58,9 @@
     transition: var(--transition-speed);
   }
   
+  .nav-item i {
+    padding-left: 20px;
+  }
   .nav-link:hover {
     filter: grayscale(0%) opacity(1);
     background: var(--bg-secondary);
@@ -117,7 +120,7 @@
   }
   
   .navbar:hover .logo svg {
-    transform: rotate(-180deg);
+    transform: rotate(-540deg);
   }
   
   /*---------------------------------------------------------- Small screens -------------------------------------------------*/
