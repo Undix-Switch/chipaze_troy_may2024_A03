@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    font-family: "Cairo", sans-serif;
+    font-family:'Times New Roman', Times, serif;
     background-color: var(--body-bg);
     color: var(--text-color);
     padding-top: var(--nav-height);
@@ -316,11 +316,12 @@ img {
 }
 
 .movie-item {
-    border-radius: 15px;
-    display: block;
+    border-radius: 0px;
+    display:flex;
     position: relative;
     overflow: hidden;
     padding-top: 140%;
+
     cursor: pointer;
 }
 
@@ -333,7 +334,7 @@ img {
 }
 
 .movie-item:hover img {
-    transform: scale(1.2);
+    transform: scale(1.0);
 }
 
 .movie-item-content {
@@ -341,7 +342,7 @@ img {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 5px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -466,7 +467,7 @@ img {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 700;
-    border-left: 4px solid var(--main-color);
+    color: #0040ff;
     display: flex;
     align-items: center;
 }
