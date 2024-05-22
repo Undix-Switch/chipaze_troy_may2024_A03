@@ -20,7 +20,6 @@ html {
 }
 
 body {
-    
     background-color: var(--body-bg);
     color: var(--text-color);
     padding-top: var(--nav-height);
@@ -163,7 +162,7 @@ img {
 
 .hero-slide-item {
     border-radius: 25px;
-    padding-top: 45%;
+    padding-top: 25%;
     position: relative;
     overflow: hidden;
 }
@@ -334,7 +333,7 @@ img {
 }
 
 .movie-item:hover img {
-    transform: scale(1.0);
+    transform: scale(0.9);
 }
 
 .movie-item-content {
@@ -418,43 +417,57 @@ img {
   input[type="submit"]:hover {
     background-color: #0056b3;
   }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.thank-you-message, .error-message {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: red;
+}
   /*---------------------------------------------------Rating Box---------------------------------------------------------*/
   .rating {
-    unicode-bidi: bidi-override;
     direction: rtl;
-    text-align: left;
-  }
-  
-  .rating input {
-    display: none;
-  }
-  
-  .rating label {
     display: inline;
-    font-size: 30px;
+    unicode-bidi: bidi-override;
+    font-size: 2rem;
+}
+.rating input[type="radio"] {
+    display: none;
+}
+.rating label {
     color: #ccc;
     cursor: pointer;
-  }
-  
-  .rating label:before {
-    content: "\2605";
-  }
-  
-  .rating input:checked ~ label {
+    display: inline;
+}
+.rating input[type="radio"]:checked ~ label {
+    color: #ffc700;
+}
+.rating label:hover,
+.rating label:hover ~ label {
     color: #ffcc00;
-  }
-  
-  .rating input:checked ~ label:before {
-    content: "\2605";
-  }
-  
-  .rating label:hover ~ label {
-    color: #ffcc00;
-  }
-  
-  .rating label:hover:before {
-    content: "\2605";
-  }  
+}
+.rating input[type="radio"]:checked + label:hover,
+.rating input[type="radio"]:checked + label:hover ~ label,
+.rating input[type="radio"]:checked ~ label:hover,
+.rating input[type="radio"]:checked ~ label:hover ~ label {
+    color: #ff9900;
+} 
 /*---------------------------------------------------------------------Pricing Section-------------------------------------------------*/
 .section {
     border-radius: 25px;
@@ -467,7 +480,7 @@ img {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #0040ff;
+    color: #495adf;
     display: flex;
     align-items: center;
 }
