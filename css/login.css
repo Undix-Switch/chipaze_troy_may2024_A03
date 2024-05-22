@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+    /* font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('global-img/woi.png');
+    background-size: cover;
+} */
+
+.container7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box7 {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo7 {
+    width: 175px;
+    margin-bottom: 20px;
+}
+
+.input-box7 {
+    position: relative;
+    margin-bottom: 10px;
+    
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    background: #fafafa;
+    font-size: 14px;
+    border-radius: 15px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #a8a8a8;
+}
+
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 10px;
+    color: #8e8e8e;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #3897f0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3091e0;
+}
+
+.divider7 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+.divider7 hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #dbdbdb;
+}
+
+.divider7 span {
+    margin: 0 10px;
+    font-size: 12px;
+}
+
+.social-login7 .fb-login7 {
+    background-color: #4267b2;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.forgot-password7 {
+    color: #3897f0;
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+}
+
+.signup-box7 {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+}
+
+.signup-box7 p {
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.signup-box7 a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}
